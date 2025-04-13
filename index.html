@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Real</title>
+    <link rel="icon" type="image/png" sizes="30x30" href="favicon/iconMoeda30.png">
+    <link rel="icon" type="image/png" sizes="40x40" href="favicon/iconMoeda40.png">
+    <link rel="icon" type="image/png" sizes="80x80" href="favicon/iconMoeda80.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>conversor de moeda</h1>
+        </header>
+        <main>
+            <label>
+                <p>Converter <b>de</b></p>
+                <select>
+                    <option>R$ Real brasileiro</option>
+                </select>
+            </label>
+            <label>
+                <p>Converter <b>para</b></p>
+                <select id="select-values">
+                    <option>US$ Dólar americano</option>
+                    <option>€ EURO</option>
+                    <option>BTC</option>
+                </select>
+            </label>
+            <label>
+                <p id="valor">Valor</p>
+                <input type="text" id="valor-corrente" placeholder="R$ 10.000,00">
+            </label>
+            <button type="button" id="converter-button">Converter</button>
+            <section>
+                <div class="container-converter">
+                    <img src="./assets/iconBRL.svg" alt="bandeira-Brasil">
+                    <p class="currency-valor-text">Real</p>
+                    <p class="currency-converter-text" id="valor-real-text">R$ 10.000,00</p>
+                </div>
+                <img src="./assets/seta.png" alt="">
+                <div class="container-converter">
+                    <img src="./assets/iconEUA.svg" id="change-bandeira" alt="bandeira-EUA">
+                    <p class="currency-valor-text" id="current-text">Dólar americano</p>
+                    <p class="currency-converter-text" id="currency-value-text">US$ 2.000,00</p>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+
+<script src="./src/index.js"></script>
+</html>
